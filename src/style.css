@@ -107,8 +107,6 @@ h1 {
 }
 
 .card {
-  width: 400px;
-  height: 120px;
   color: #fff;
   background-color: #292b2e;
   border-radius: 10px;
@@ -116,6 +114,8 @@ h1 {
   justify-content: space-around;
   align-items: center;
   font-weight: 700;
+  width: 400px;
+  height: 120px;
 }
 .card:hover {
   background: linear-gradient(
@@ -147,7 +147,7 @@ h1 {
   color: #fff;
 }
 .title {
-  width: 148px;
+  max-width: 148px;
   height: 42px;
   line-height: 42px;
   font-size: 20px;
@@ -168,7 +168,7 @@ h1 {
   justify-content: space-between;
 }
 #about_me img {
-  width: 620px;
+  max-width: 620px;
   margin-bottom: 18px;
 }
 #about_me h1,
@@ -178,12 +178,11 @@ h1 {
 }
 .who_i_am {
   color: #fff;
-  width: 672px;
 }
 .who_i_am > p,
 .my_skills > p {
   margin: 29px 50px 54px 0;
-  width: 620px;
+  max-width: 620px;
 }
 
 #skills {
@@ -226,18 +225,17 @@ h1 {
 .tab {
   display: flex;
   justify-content: space-between;
-  width: 500px;
-  height: 30px;
+  line-height: 30px;
   margin-bottom: 50px;
 }
 .tab-items {
   font-size: 16px;
   font-weight: 600;
+  margin: 0 32px;
 }
 .work_images {
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 .work_images .column {
   display: flex;
@@ -249,6 +247,7 @@ h1 {
   margin: 0 50px 253px 50px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 #testimonials h1 {
