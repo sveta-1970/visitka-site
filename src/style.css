@@ -16,7 +16,7 @@ a {
 a:hover {
   color: var(--secondary-color);
 }
-/* h1 общие свойства, специальные свойства см.в соответсвующих разделах*/
+
 h1 {
   font-size: 48px;
   color: #fff;
@@ -47,6 +47,7 @@ h1 {
 
 .header .menu-item a {
   font-size: 18px;
+  transition: all 0.3s ease-in-out;
 }
 .header .menu-item a:hover {
   color: var(--secondary-color);
@@ -63,6 +64,7 @@ h1 {
   border-radius: 50px;
   max-width: 121px;
   max-height: 54px;
+  transition: all 0.3s ease-in-out;
 }
 .hire_me:hover {
   background-color: var(--secondary-color);
@@ -116,6 +118,7 @@ h1 {
   font-weight: 700;
   width: 400px;
   height: 120px;
+  transition: all 0.3ms ease-in-out;
 }
 .card:hover {
   background: linear-gradient(
@@ -168,7 +171,6 @@ h1 {
   justify-content: space-between;
 }
 #about_me img {
-  max-width: 620px;
   margin-bottom: 18px;
 }
 #about_me h1,
@@ -182,14 +184,12 @@ h1 {
 .who_i_am > p,
 .my_skills > p {
   margin: 29px 50px 54px 0;
-  max-width: 620px;
 }
 
 #skills {
   margin: 0 50px;
 }
 .my_skills {
-  max-width: 672px;
   color: #fff;
 }
 
@@ -260,11 +260,11 @@ h1 {
 }
 .customer_testimonial {
   padding-top: 50px;
-  max-width: 370px;
   background: #ffffff;
   border-radius: 7.92699px;
   border: 1px solid var(--primary-color);
   font-size: 20px;
+  margin: 0 5px;
 }
 .person {
   display: flex;
