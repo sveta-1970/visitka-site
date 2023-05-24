@@ -261,9 +261,10 @@ h1 {
 }
 .customer_testimonial {
   padding-top: 50px;
-  width: 370px;
+  max-width: 370px;
   background: #ffffff;
   border-radius: 7.92699px;
+  border: 1px solid var(--primary-color);
   font-size: 20px;
 }
 .person {
