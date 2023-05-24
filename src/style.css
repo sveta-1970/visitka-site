@@ -7,8 +7,6 @@
 body {
   background-color: var(--primary-color);
   margin: 0;
-  min-width: 900px;
-  max-width: 100vw;
   font-family: "Poppins";
 }
 a {
@@ -105,7 +103,7 @@ h1 {
 .group {
   margin: 136px 0px 227px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card {
@@ -192,12 +190,16 @@ h1 {
   margin: 0 50px;
 }
 .my_skills {
-  width: 672px;
+  max-width: 672px;
   color: #fff;
 }
 
 .emblem_group {
-  width: 560px;
+  max-width: 560px;
+  max-height: 176px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .emblem_group .image {
@@ -208,14 +210,6 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.emblem_group .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.emblem_group .first {
-  margin-bottom: 16px;
 }
 
 #my_works {
