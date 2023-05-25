@@ -8,6 +8,8 @@ body {
   background-color: var(--primary-color);
   margin: 0;
   font-family: "Poppins";
+  width: 100%;
+  max-width: 1500px;
 }
 a {
   text-decoration: none;
@@ -72,7 +74,7 @@ h1 {
 }
 
 #general {
-  margin: 100px 50px 0 50px;
+  margin: 100px 0;
 }
 #general h1 {
   line-height: 91px;
@@ -103,7 +105,7 @@ h1 {
   margin: 0 auto;
 }
 .group {
-  margin: 136px 0px 227px 0px;
+  margin: 136px 30px 227px 30px;
   display: flex;
   justify-content: space-around;
 }
@@ -116,9 +118,10 @@ h1 {
   justify-content: space-around;
   align-items: center;
   font-weight: 700;
-  width: 400px;
+  width: 300px;
   height: 120px;
   transition: all 0.3ms ease-in-out;
+  margin-top: 10px;
 }
 .card:hover {
   background: linear-gradient(
@@ -170,7 +173,13 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+#about_me {
+  margin-bottom: 50px;
+}
 #about_me img {
+  max-width: 600px;
+  height: auto;
   margin-bottom: 18px;
 }
 #about_me h1,
@@ -180,6 +189,7 @@ h1 {
 }
 .who_i_am {
   color: #fff;
+  margin-left: 50px;
 }
 .who_i_am > p,
 .my_skills > p {
@@ -197,6 +207,7 @@ h1 {
   max-width: 560px;
   max-height: 176px;
   display: flex;
+  justify-content: right;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -223,6 +234,7 @@ h1 {
 }
 
 .tab {
+  text-align: center;
   display: flex;
   justify-content: space-between;
   line-height: 30px;
@@ -235,12 +247,16 @@ h1 {
 }
 .work_images {
   display: flex;
-  justify-content: space-around;
 }
 .work_images .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+.work_images .column img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
 }
 
 #testimonials {
@@ -323,4 +339,68 @@ footer {
 }
 .email {
   background-color: #7b7b7b;
+}
+
+@media (max-width: 900px) {
+  #logo {
+    display: none;
+  }
+
+  nav a.hire_me {
+    display: none;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #general p:last-of-type {
+    font-size: 22px;
+  }
+  .group {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    margin-top: 100px;
+  }
+  #about_me {
+    margin-bottom: 100px;
+  }
+  #about_me img {
+    display: none;
+  }
+
+  #skills {
+    flex-wrap: wrap;
+  }
+
+  .emblem_group {
+    margin-top: 50px;
+    justify-content: left;
+  }
+  .group_testimonials {
+    flex-wrap: wrap;
+  }
+
+  #my_works {
+    margin: 100px 0;
+  }
+
+  #testimonials h1 {
+    margin-bottom: 45px;
+  }
+
+  #testimonials {
+    margin-bottom: 100px;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+  ul.links-menu {
+    display: block;
+  }
+  .links-menu-item {
+    display: inline;
+    margin-right: 20px;
+  }
 }
